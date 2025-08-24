@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: auto;
+}
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+.nav {
+  display: flex;
+  gap: 14px;
+}
+.nav li {
+  list-style: none;
+  font-size: 23px;
+}
+.bg {
+  background-color: #d9d9d9;
+  padding: 40px 0 170px 0;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 35px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: -170px;
+}
+.image {
+  width: 100%;
+  height: 200px;
+  background-color: #eeeeee;
+  border-radius: 16px;
+}
+.card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.card a {
+  color: #0e53f6;
+  font-size: 20px;
+}
+.bg02 {
+  background-color: #ffffff;
+  padding: 40px 0;
+  margin-top: 40px;
+  border-top: 1px solid #d9d9d9;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.Copyright {
+  font-size: 26px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.dots {
+  background-color: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.next-button-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.next-btn {
+  display: inline-block;
+  background-color: #11877c;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000026;
+  transition: all 0.2s ease;
+}
+
+.next-btn:hover {
+  background-color: #16c4b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #00000033;
+}
+@media (max-width: 768px) {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 460px) {
+  .grid-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+}
